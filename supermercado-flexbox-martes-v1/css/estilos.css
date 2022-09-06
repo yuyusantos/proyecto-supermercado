@@ -1,0 +1,102 @@
+.menu{
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu .logo a img{
+    width: 80px;
+}
+.enlaces ul,
+.iconos ul{
+    list-style: none;
+    display: flex;
+}
+.enlaces ul li,
+.iconos ul li{
+    margin-right: 10px;
+}
+.enlaces ul li a,
+.enlaces ul li i,
+.iconos ul li svg{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.enlaces ul li a:hover{
+    border-bottom: 2px solid red;
+    color:red;
+}
+.enlaces ul li a::After{
+    content:"*" ;
+    color:red;
+
+}
+
+.iconos ul li i,
+.iconos ul li svg{
+    background-color: red;
+    padding: 5px 6px;
+    border-radius: 50%;
+}
+.iconos ul li i:hover,
+.iconos ul li svg:hover{
+    background-color: white;
+    color:red;
+
+}
+/*imagen principal*/
+.principal{
+    background:url("../imagenes/63093.jpg");
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+.principal .con-texto h1{
+    color:violet
+    font-size 50px;
+    font-weight:bold;
+
+}
+.principal .con-texto p{
+    font-size: 25px;
+
+}
+.principal .con-texto a{
+    background-color: violet;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.principal .con-texto a:hover{
+    background-color: white;
+    color: violet;
+    border: 2px solid violet;
+
+}
+.principal .con-texto{
+    width: 300;
+    text-align: center;
+    margin-right: 50px;
+}
+/*descuento*/
+.descuento{
+    width: 100%;
+    height: 300px;    
+    display: flex;
+    justify-content: center;
+}
+.descuento img{
+    width: 300px;
+    height: auto;
+
+}
