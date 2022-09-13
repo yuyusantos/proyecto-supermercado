@@ -1,3 +1,7 @@
+h1,h2,h3,h4,h5,h6{
+font-family: 'Lobster', cursive;
+}
+
 .menu{
     width: 100%;
     height: 100px;
@@ -89,14 +93,105 @@
     margin-right: 50px;
 }
 /*descuento*/
-.descuento{
+.descuento,
+.productos{
     width: 100%;
-    height: 300px;    
+    height: auto;    
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+   align-items: center;
 }
 .descuento img{
     width: 300px;
     height: auto;
 
+}
+.titulo-des h2,
+.titulo-pro h2,
+.titulo-ser h2{
+    font-size: 50px;
+    color:violet;
+    text-align: center;
+}
+/*productos*/
+.con-productos{
+    width: 65%;
+    height:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin: 0 auto;
+}
+.tarjeta{
+    width: 300px;
+    height: auto;
+    background-color:gray;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.tarjeta .con-texto h3{
+    font-size: 30px;
+    color: black;
+    font-weight:bold;
+    text-align:center;
+}
+.tarjeta .con-texto p{
+    font-size: 20px;
+    text-align:center;
+}
+.tarjeta .botones{
+    display:flex;
+    justify-content: space-around;
+
+}
+.tarjeta.botones.span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.tarjeta .botones a{
+    padding:7px 12px;
+    color: white;
+    background-color: violet;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+.tarjeta img{
+    width: 100%;
+    height: auto;
+}
+/*servicios*/
+.con-servicios{
+    width: 100%;
+    height: auto;
+}
+.servicios-1,
+.servicio-2{
+    width: 80%;
+    height: auto;
+    display:flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.servicios-1 img,
+.servicio-2 img{
+    width: 50%;
+}
+.servicios-1.con-texto,
+.servicio-2.con-texto{
+    width: 50%;
+}
+.servicios-1.con-texto h3,
+.servicio-2con-texto h3{
+    font-size: 35px;
+    color:violet;
+    font-weight: bold;
+}
+.servicios-1 .con-texto p,
+.servicios-1 .con-texto ul,
+.servicio-2 .con-texto p,
+.servicio-2 .con-texto ul{
+    font-size: 20px;
+    color:rgb(69,69,69);
 }
